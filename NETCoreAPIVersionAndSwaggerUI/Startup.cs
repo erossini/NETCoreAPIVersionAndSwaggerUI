@@ -117,8 +117,7 @@ namespace NETCoreAPIVersionAndSwaggerUI
                 {
                     options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
                 }
-            }
-            );
+            });
 
             app.UseEndpoints(endpoints =>
             {
